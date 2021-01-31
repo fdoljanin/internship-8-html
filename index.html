@@ -9,7 +9,7 @@
   <body>
     <nav class="navigation">
       <div class="navigation-logo">
-        <img src="logo.svg" alt="React logo" height=30px/>
+        <img src="src/logo.svg" alt="React logo" height="30px" />
         <span class="navigation-react">React</span>
       </div>
       <ul class="navigation-list">
@@ -20,9 +20,16 @@
       </ul>
       <ul class="navigation-list navigation-list--right">
         <li class="navigation-item"><a href="">v17.0.1</a></li>
-        <li class="navigation-item"><a href="">
-          <img src="translate.svg" alt="translate" class="navigation-translate">
-          <span>Languages</span></a></li>
+        <li class="navigation-item">
+          <a href="">
+            <img
+              src="src/translate.svg"
+              alt="translate"
+              class="navigation-translate"
+            />
+            <span>Languages</span></a
+          >
+        </li>
         <li class="navigation-item"><a href="">Github</a></li>
       </ul>
     </nav>
@@ -33,7 +40,9 @@
           A JavaScript library for building user interfaces
         </p>
         <button class="header-button">Get Started</button>
-        <button class="header-button">Take the Tutorial</button>
+        <button class="header-button header-button--tutorial">
+          Take the Tutorial
+        </button>
       </article>
     </header>
     <main class="main">
@@ -44,9 +53,8 @@
             React makes it painless to create interactive UIs. <br />Design
             simple views for each state in your <br />application, and React
             will efficiently update and <br />render just the right components
-            when your data <br />changes. 
+            when your data <br />changes.
           </p>
-<br>
           <p class="features-paragraph">
             Declarative views make your code more <br />predictable and easier
             to debug.
@@ -56,9 +64,8 @@
           <h3 class="features-title">Component-Based</h3>
           <p class="features-paragraph">
             Build encapsulated components that manage their <br />own state,
-            then compose them to make complex <br />UIs. 
+            then compose them to make complex <br />UIs.
           </p>
-          <br>
           <p class="features-paragraph">
             Since component logic is written in JavaScript <br />instead of
             templates, you can easily pass rich data <br />through your app and
@@ -72,10 +79,10 @@
             stack, so you can develop new <br />features in React without
             rewriting existing code.
           </p>
-          <br>
           <p class="features-paragraph">
             React can also render on the server using Node <br />and power
-            mobile apps using <a href="">React Native</a>.
+            mobile apps using
+            <a href="" class="features-paragraph--link">React Native</a>.
           </p>
         </article>
       </section>
@@ -83,12 +90,14 @@
         <article class="features-article">
           <h3 class="features-title">An Application</h3>
           <p class="features-paragraph">
-            Using <span>props</span> and <span>state</span>, we can put together
-            <br />a small Todo application. This example uses
-            <span>state</span> <br />to track the current list of items as well
-            as the <br />text that the user has entered. Although event
-            <br />handlers appear to be rendered inline, they will <br />be
-            collected and implemented using event <br />delegation.
+            Using <span class="features-paragraph--yellow">props</span> and
+            <span class="features-paragraph--yellow">state</span>, we can put
+            together <br />a small Todo application. This example uses
+            <span class="features-paragraph--yellow">state</span> <br />to track
+            the current list of items as well as the <br />text that the user
+            has entered. Although event <br />handlers appear to be rendered
+            inline, they will <br />be collected and implemented using event
+            <br />delegation.
           </p>
         </article>
         <article class="features-article">
@@ -96,19 +105,23 @@
           <p class="features-paragraph">
             React allows you to interface with other libraries <br />and
             frameworks. This example uses <b>remarkable</b>, <br />an external
-            Markdown library, to convert the <br /><code>&lt;textarea&gt;</code
+            Markdown library, to convert the <br /><code
+              class="features-paragraph--yellow"
+              >&lt;textarea&gt;</code
             >’s value in real time.
           </p>
         </article>
         <article class="features-article">
           <h3 class="features-title">An Application</h3>
           <p class="features-paragraph">
-            Using <span>props</span> and <span>state</span>, we can put together
-            <br />a small Todo application. This example uses
-            <span>state</span> <br />to track the current list of items as well
-            as the <br />text that the user has entered. Although event
-            <br />handlers appear to be rendered inline, they will <br />be
-            collected and implemented using event <br />delegation.
+            Using <span class="features-paragraph--yellow">props</span> and
+            <span>state</span>, we can put together <br />a small Todo
+            application. This example uses
+            <span class="features-paragraph--yellow">state</span> <br />to track
+            the current list of items as well as the <br />text that the user
+            has entered. Although event <br />handlers appear to be rendered
+            inline, they will <br />be collected and implemented using event
+            <br />delegation.
           </p>
         </article>
       </section>
@@ -116,57 +129,67 @@
     <footer class="footer">
       <div class="footer-actions">
         <button class="footer-button">Get Started</button>
-        <button class="footer-button">Take the Tutorial</button>
+        <button class="footer-button footer-button--tutorial">
+          Take the Tutorial
+        </button>
       </div>
-      <div class="footer-links">
+      <div class="footer-info">
         <div class="footer-facebook_copyright">
-          <img src="fbopensource.png" alt="Facebook open source" class="footer-facebook_logo"/>
+          <img
+            src="src/fbopensource.png"
+            alt="Facebook open source"
+            class="footer-facebook_logo"
+          />
           <p class="footer-copyright">Copyright &copy; 2021 Facebook Inc.</p>
         </div>
-        <section class="footer-section">
-          <h5 class="footer-title">DOCS</h5>
-          <ul class="footer-list">
-            <li><a href="" class="footer-item">Installation</a></li>
-            <li><a href="" class="footer-item">Main Concepts</a></li>
-            <li><a href="" class="footer-item">Advanced Guides</a></li>
-            <li><a href="" class="footer-item">API Reference</a></li>
-            <li><a href="" class="footer-item">Hooks</a></li>
-            <li><a href="" class="footer-item">Testing</a></li>
-            <li><a href="" class="footer-item">Concurrent Mode (Experimental)</a></li>
-            <li><a href="" class="footer-item">Contributing</a></li>
-            <li><a href="" class="footer-item">FAQ</a></li>
-          </ul>
-        </section>
-        <section class="footer-section">
-          <h5 class="footer-title">COMMUNITY</h5>
-          <ul class="footer-list">
-            <li><a href="" class="footer-item">Code of Conduct</a></li>
-            <li><a href="" class="footer-item">Community Resources</a></li>
-          </ul>
-        </section>
-        <section class="footer-section">
-          <h5 class="footer-title">CHANNELS</h5>
-          <ul class="footer-list">
-            <li><a href="" class="footer-item">GitHub</a></li>
-            <li><a href="" class="footer-item">Stck Overflow</a></li>
-            <li><a href="" class="footer-item">Discussion Forums</a></li>
-            <li><a href="" class="footer-item">Reactiflux Chat</a></li>
-            <li><a href="" class="footer-item">DEV Community</a></li>
-            <li><a href="" class="footer-item">Facebook</a></li>
-            <li><a href="" class="footer-item">Twitter</a></li>
-          </ul>
-        </section>
-        <section class="footer-section">
-          <h5 class="footer-title">MORE</h5>
-          <ul class="footer-list">
-            <li><a href="" class="footer-item">Tutorial</a></li>
-            <li><a href="" class="footer-item">Blog</a></li>
-            <li><a href="" class="footer-item">Acknowledgements</a></li>
-            <li><a href="" class="footer-item">React Native</a></li>
-            <li><a href="" class="footer-item">Privacy</a></li>
-            <li><a href="" class="footer-item">Terms</a></li>
-          </ul>
-        </section>
+        <div class="footer-links">
+          <section class="footer-section">
+            <h5 class="footer-title">DOCS</h5>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="">Installation</a></li>
+              <li class="footer-item"><a href="">Main Concepts</a></li>
+              <li class="footer-item"><a href="">Advanced Guides</a></li>
+              <li class="footer-item"><a href="">API Reference</a></li>
+              <li class="footer-item"><a href="">Hooks</a></li>
+              <li class="footer-item"><a href="">Testing</a></li>
+              <li class="footer-item">
+                <a href="">Concurrent Mode (Experimental)</a>
+              </li>
+              <li class="footer-item"><a href="">Contributing</a></li>
+              <li class="footer-item"><a href="">FAQ</a></li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h5 class="footer-title">COMMUNITY</h5>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="">Code of Conduct</a></li>
+              <li class="footer-item"><a href="">Community Resources</a></li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h5 class="footer-title">CHANNELS</h5>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="">GitHub</a></li>
+              <li class="footer-item"><a href="">Stck Overflow</a></li>
+              <li class="footer-item"><a href="">Discussion Forums</a></li>
+              <li class="footer-item"><a href="">Reactiflux Chat</a></li>
+              <li class="footer-item"><a href="">DEV Community</a></li>
+              <li class="footer-item"><a href="">Facebook</a></li>
+              <li class="footer-item"><a href="">Twitter</a></li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h5 class="footer-title">MORE</h5>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="">Tutorial</a></li>
+              <li class="footer-item"><a href="">Blog</a></li>
+              <li class="footer-item"><a href="">Acknowledgements</a></li>
+              <li class="footer-item"><a href="">React Native</a></li>
+              <li class="footer-item"><a href="">Privacy</a></li>
+              <li class="footer-item"><a href="">Terms</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
